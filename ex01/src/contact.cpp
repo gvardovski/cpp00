@@ -6,31 +6,41 @@
 /*   By: svolkau <gvardovski@icloud.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/08 13:49:35 by svolkau           #+#    #+#             */
-/*   Updated: 2025/12/08 13:53:09 by svolkau          ###   ########.fr       */
+/*   Updated: 2025/12/11 16:10:15 by svolkau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../inc/contact.hpp"
 
 Contact::Contact() {
-	this->_f_name = "";
-	this->_l_name = "";
-	this->_ph_number = "";
+	this->_first_name = "";
+	this->_last_name = "";
+	this->_nickname = "";
+	this->_phone_number = "";
+	this->_darkest_secret = "";
 }
 
-Contact::Contact(std::string f_name, std::string l_name, std::string ph_number)
-	: _f_name(f_name), _l_name(l_name), _ph_number(ph_number) {}
+Contact::Contact(std::string first_name, std::string last_name, std::string nickname, std::string phone_number, std::string darkest_secret)
+	: _first_name(first_name), _last_name(last_name), _nickname(nickname), _phone_number(phone_number), _darkest_secret(darkest_secret) {}
 
-std::string Contact::get_f_name() const{
-	return this->_f_name;
+std::string Contact::get_first_name() const{
+	return this->_first_name;
 }
 
-std::string Contact::get_l_name() const{
-	return this->_l_name;
+std::string Contact::get_last_name() const{
+	return this->_last_name;
 }
 
-std::string Contact::get_ph_number() const{
-	return this->_ph_number ;
+std::string Contact::get_nickname() const{
+	return this->_nickname;
+}
+
+std::string Contact::get_phone_number() const{
+	return this->_phone_number ;
+}
+
+std::string Contact::get_darkest_secret() const{
+	return this->_darkest_secret;
 }
 
 Contact::~Contact() {}

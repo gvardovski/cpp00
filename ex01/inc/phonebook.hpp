@@ -6,7 +6,7 @@
 /*   By: svolkau <gvardovski@icloud.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/08 13:53:32 by svolkau           #+#    #+#             */
-/*   Updated: 2025/12/08 14:49:39 by svolkau          ###   ########.fr       */
+/*   Updated: 2025/12/11 18:13:14 by svolkau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ class PhoneBook
 		Contact	_contacts[8];
 		int _cc;
 
-		void init_contact(std::string f_name, std::string l_name, std::string ph_number);
+		void init_contact(std::string first_name, std::string last_name, std::string nickname, std::string phone_number, std::string darkest_secret);
 		std::string trunc_col(std::string data);
 
 	public:
